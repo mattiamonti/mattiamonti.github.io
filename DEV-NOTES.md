@@ -1,3 +1,2 @@
 # TASKS
-- [ ] refactor codice
-- [ ] refactor struttura sito
+- refactor struttura cartella

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mattia Monti">
+    <meta name="keywords" content="developer, sviluppatore, web, design, programmazione, sviluppare, software" />
+    <meta name="description" content="Personal portfolio of Mattia Monti" />
+    <link rel="icon" href="./img/logo.svg">
+
+    <title>Mattia Monti</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+
+                colors: {
+                    transparent: 'transparent',
+                    'watermark': '#fafafa',
+                    'white': '#ffffff',
+                    'black': '#000000',
+                    'red': '#FF512F',
+                    'orange': '#FB7311',
+                    'grey': '#e9e9e9',
+                    'lightgrey': '#f5f5f5',
+                    'green': '#94d058',
+                    'acqua': '#58d0b8',
+                    'blu': '#588ad0',
+
+                },
+
+                fontFamily: {
+                    'sans': ['Helvetica'],
+                    'serif': ['Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"'],
+                },
+                extend: {
+                    fontSize: {
+                        '9xxl': '10rem',
+                    },
+                    animation: {
+                        wave: 'wave 3s infinite',
+                        text: 'text 8s ease infinite',
+                    },
+                    keyframes: {
+                        wave: {
+                            '0%': {
+                                transform: 'rotate(0deg)',
+                            },
+                            '10%': {
+                                transform: 'rotate(14deg)',
+                            },
+                            '20%': {
+                                transform: 'rotate(-8deg)',
+                            },
+                            '30%': {
+                                transform: 'rotate(14deg)',
+                            },
+                            '40%': {
+                                transform: 'rotate(-4.0deg)',
+                            },
+                            '50%': {
+                                transform: 'rotate(10deg)',
+                            },
+                            '60%': {
+                                transform: 'rotate(-8deg)',
+                            },
+                            '70%': {
+                                transform: 'rotate(14deg)',
+                            },
+                            '80%': {
+                                transform: 'rotate(0deg)',
+                            },
+                            '100%': {
+                                transform: 'rotate(0deg)',
+                            },
+                        },
+                        'text': {
+                            '0%': {
+                                'background-size': '800% 200%',
+                                'background-position': 'left center'
+                            },
+                            '20%': {
+                                'background-size': '800% 200%',
+                                'background-position': 'center center'
+                            },
+                            '40%': {
+                                'background-size': '800% 200%',
+                                'background-position': 'right center'
+                            },
+                            '70%': {
+                                'background-size': '800% 200%',
+                                'background-position': 'center center'
+                            },
+                            '100%': {
+                                'background-size': '800% 200%',
+                                'background-position': 'left center'
+                            }
+                        },
+                    },
+                },
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+    <div id="header">
+        <img id="logo" src="./img/logo.svg" class="absolute ml-8 sm:ml-16 sm:-mt-2 mt-2">
+        <div class="w-full h-auto bg-red-400 text-sm sm:text-xl sm:mt-8">
+
+            <p class="font-bold inline text-xl mt-10 sm:absolute ml-36 sm:mt-0">Mattia Monti</p>
+            <p class="invisible sm:visible font-bold text-right space-x-3 sm:space-x-12 mt-2 sm:mt-0">
+                <span class="hover:scale-110 hover:duration-200 hover:text-red inline-block"><a
+                        href="index.html">Home</a></span>
+                <span class="hover:scale-110 hover:duration-200 hover:text-red inline-block"><a
+                        href="#projects">Projects</a></span>
+                <span class="hover:scale-110 hover:duration-200 hover:text-red inline-block"><a href="#contact"
+                        class="pr-24">Contact</a></span>
+            </p>
+        </div>
+    </div>
+    <div
+        class="text-watermark font-bold absolute -z-40 text-6xl tracking-wide leading-snug sm:text-9xl sm:tracking-wider sm:leading-relaxed">
+        JAVA PYHON R
+        HTML CSS FIGMA VSCODE INTELLIJ
+    </div>
+    <div class="ml-8 mt-16 w-3/5 sm:ml-36 sm:mt-40 sm:w-2/5">
+        <h1 class="text-4xl sm:text-6xl font-bold" id="title">Hi <span id="emoji"
+                class="inline-block animate-wave">👋🏻</span>, I’m
+            a <br> Software <span class="text-transparent bg-clip-text bg-gradient-to-r 
+                from-red to-orange hover:from-acqua hover:to-blu hover:duration-500">Developer</span></h1>
+        <br>
+        <br>
+        <p class="text-xl -mt-2 sm:mt-0 sm:text-2xl" id="subtitle">I'm currently studying Internet of Things, Big Data,
+            Machine learning at the
+            University of
+            Udine, in Italy. <br>
+
+            <br>
+        </p>
+        <p class="invisible -mt-20 sm:mt-0 sm:visible sm:text-2xl" id="subtitle">I'm intrested in many fields, like java
+            and pyhton software development, web design but also data
+            science and
+            machine leaning.
+        </p>
+    </div>
+
+    <div class="top-32 sm:top-1/3 left-2/3 absolute w-32 h-32 sm:w-72 sm:h-72 rounded-full " id="profilepic">
+        <a href="https://github.com/mattiamonti" target="_blank">
+            <img src="./img/memoji.png" class="-mt-4 scale-105 hover:scale-110 hover:duration-300">
+        </a>
+    </div>
+
+    <div id="button-container">
+        <a href="#contact" id="clicktochat">
+            <button
+                class="rounded-lg bg-gradient-to-r from-red to-orange w-20 h-7 ml-8 -mt-8 sm:w-36 sm:h-10 sm:ml-36 sm:mt-16 text-white font-bold text-lg sm:text-xl hover:scale-110 hover:duration-150">Chat
+                with
+                Me</button>
+        </a>
+        <a href="" id="clicktolinkedin" class="hidden">
+            <button class="ml-8 sm:ml-16 italic text-md sm:text-lg hover:scale-110 hover:duration-150">
+                See my LinkedIn
+            </button>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section id="projects">
+
+        <div
+            class="text-watermark font-bold absolute -z-40 text-6xl mt-12 tracking-wide leading-relaxed sm:mt-0 sm:text-9xl sm:tracking-wider sm:leading-relaxed text-right w-full">
+            PROJECTS
+        </div>
+        <div class="w-full text-right">
+            <h3 id="section-title"
+                class="mr-8 sm:ml-0 text-4xl sm:text-5xl font-bold text-right sm:mr-48 tracking-widest translate-y-20">
+                PROJECTS</h3>
+        </div>
+
+        <!--PRIMO PROGETTO: QUESTO SITO-->
+        <article id="project-1" class="w-full mt-36 sm:flex">
+            <div class="sm:w-1/2 h-72 sm:flex sm:justify-end">
+                <div class="w-5/6 sm:w-4/6 h-auto ml-8 sm:ml-0 sm:h-full mr-4 sm:mr-20">
+                    <h2 class="text-2xl sm:text-4xl ml-0 sm:ml-0 sm:text-right font-bold">This Website
+                        <a href="https://github.com/mattiamonti/portfolio" target="_blank" class="sm:hidden">
+                            <img src="./img/github-original.svg"
+                                class="w-7 h-7 inline-block hover:scale-110 hover:duration-150">
+                        </a>
+                    </h2>
+                    <br>
+                    <p class="text-md sm:text-2xl ml-0 sm:ml-0 -mt-3 sm:mt-0 sm:text-right">My portfolio website, its
+                        design and animation</p>
+                    <br>
+                    <br>
+                    <div class="hidden sm:visible w-full sm:flex sm:justify-end sm:justify-items-end">
+                        <a href="https://github.com/mattiamonti/portfolio" target="_blank">
+                            <img src="./img/github-original.svg"
+                                class="w-7 h-7 -mt-8 sm:mt-0 sm:w-12 sm:h-12 hover:scale-110 hover:duration-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-5/6 sm:w-1/2 h-64 sm:h-72 -mt-36 sm:mt-0 m-auto sm:m-0">
+                <div class="w-full sm:w-3/4 h-full rounded-lg bg-cover hover:scale-110 hover:duration-150"
+                    style="background-image: url(./img/websiteshowcase.png)"></div>
+            </div>
+        </article>
+
+
+        <!--SECONDO PROGETTO: EXPENSE TRACKER-->
+        <div id="project-2" class="w-full mt-16 sm:mt-36 sm:flex">
+            <div class="hidden sm:visible w-1/2 h-64 sm:h-72 sm:flex justify-end">
+                <div class="w-3/4 h-full bg-cover rounded-lg hover:scale-110 hover:duration-150"
+                    style="background-image: url(./img/ExpenseTrackerCLI.png)"></div>
+            </div>
+            <div class="sm:w-1/2 h-72">
+                <div class="w-5/6 sm:w-4/6 h-auto sm:h-full ml-8 sm:ml-20 sm:mr-0">
+                    <h2 class="text-2xl sm:text-4xl ml-0 sm:ml-0 font-bold">Expense Tracker
+                        <a href="https://github.com/mattiamonti/" target="_blank" class="sm:hidden">
+                            <img src="./img/github-original.svg"
+                                class="w-7 h-7 inline-block hover:scale-110 hover:duration-150">
+                        </a>
+                    </h2>
+                    <br>
+                    <p class="text-md sm:text-2xl ml-0 sm:ml-0 -mt-3 sm:mt-0 sm:w-full sm:text-left">Expense tracker
+                        software with command line interface, built with python and click library</p>
+                    <br>
+                    <br>
+                    <div class="w-full sm:flex justify-start hidden sm:visible">
+                        <a href="">
+                            <img src="./img/github-original.svg"
+                                class="w-7 h-7 -mt-8 sm:mt-0 sm:w-12 sm:h-12 hover:scale-110 hover:duration-150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-5/6 sm:hidden sm:w-1/2 h-64 sm:h-72 -mt-36 sm:mt-0 m-auto sm:m-0">
+                <div class="w-full sm:w-3/4 h-full bg-cover rounded-lg hover:scale-110 hover:duration-150"
+                    style="background-image: url(./img/ExpenseTrackerCLI.png)"></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section id="contact" class="-mt-16 sm:mt-0 sm:absolute">
+        <div
+            class="text-watermark font-bold absolute -z-40 text-6xl mt-12 tracking-wide leading-relaxed sm:mt-0 sm:text-9xl sm:tracking-wider sm:leading-relaxed text-left w-1/2">
+            CONTACT
+        </div>
+        <div class="w-full text-left">
+            <h3 id="contact-title"
+                class="text-3xl sm:text-5xl font-bold text-left ml-8 sm:ml-44 tracking-widest translate-y-20">LET'S
+                CONNECT</h3>
+        </div>
+
+
+        <form id="contact-form" action="https://formspree.io/f/xnqrggpd" method="POST"
+            class="mt-28 sm:mt-36 w-2/3 sm:w-1/4 ml-8 sm:ml-44 h-44 mb-48">
+            <label>Your name
+                <input type="text" placeholder="Mario Rossi" name="name" required
+                    class="w-full h-9 mb-2 pl-3 rounded-md bg-lightgrey">
+            </label>
+            <label>Your email
+                <input type="email" placeholder="mariorossi@example.com" name="email" required
+                    class="w-full h-9 mb-2 pl-3 rounded-md bg-lightgrey">
+            </label>
+            <label>Message
+                <textarea name="message" required rows="4" cols="50" name="body"
+                    placeholder="Tell me a little about ..."
+                    class="w-full h-2/3 mb-2 pl-3 rounded-md bg-lightgrey"></textarea>
+            </label>
+            <input type="submit" value="send"
+                class="w-1/3 h-8 mt-7 border rounded-lg bg-gradient-to-r from-red to-orange text-white font-bold text-xl hover:scale-110 hover:duration-150">
+        </form>
+
+        <br class="invisible sm:invisible">
+
+        <div id="social-links" class="h-1/3 w-1/3 sm:absolute sm:top-48 sm:left-1/2 ml-52 sm:ml-48 -mt-8 sm:mt-0">
+            <ul class="text-sm sm:text-xl font-bold sm:mt-0 flex justify-between sm:inline-block">
+                <li class="sm:mt-2 hover:scale-105 hover:ease-in-out hover:duration-200">
+                    <a href="">
+                        <img src="./img/instagram.svg" class="w-7 h-7 sm:w-10 sm:h-10 inline-block"><span
+                            class="hidden sm:visible sm:inline-block sm:ml-2"> monti_mattia</span></a>
+                </li>
+                <li class="sm:mt-7 ml-1 hover:scale-105 hover:ease-in-out hover:duration-200">
+                    <a href="https://github.com/mattiamonti">
+                        <img src="./img/github-original.svg" class="w-6 h-6 sm:w-9 sm:h-9 inline-block"><span
+                            class="hidden sm:visible sm:inline-block sm:ml-2"> mattiamonti</span></a>
+                </li>
+                <li class="sm:mt-7 ml-1 hover:scale-105 hover:ease-in-out hover:duration-200 sm:block inline-block">
+                    <a href="">
+                        <img src="./img/twitter.svg" class="w-6 h-6 sm:w-9 sm:h-9 inline-block"><span
+                            class="hidden sm:visible sm:inline-block sm:ml-2"> mattiamonti</span></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+    </section>
+
+    <script src="animation.js"></script>
+
+</body>
+
+</html>

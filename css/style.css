@@ -1,0 +1,316 @@
+body,
+nav,
+main,
+footer,
+p,
+h1,
+h2,
+h3,
+ul {
+    margin: 0;
+}
+
+body {
+    margin: 0 20vw;
+    font-family: 'Inter', sans-serif;
+    color: #121212;
+    /*transition for soft dark and light mode change*/
+    transition: ease-in-out 400ms;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 2em;
+    }
+}
+
+/*NAVBAR*/
+a,
+li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+.menu li {
+    opacity: 0.5;
+    margin-left: 3em;
+    transition: ease-in-out 200ms;
+}
+
+.menu li:hover {
+    opacity: 1;
+}
+
+.name-container p {
+    display: inline;
+}
+
+nav {
+    margin: 1em 0 5em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+    align-items: center;
+}
+
+div.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.memoji {
+    margin-right: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    display: inline-block;
+    background-image: url('../img/memoji_1.png');
+    background-size: contain;
+    transition: ease-in 100ms;
+}
+.name-container:hover .memoji {
+    background-image: url('../img/memoji_2.png');
+}
+
+.toggle-mode {
+    width: 1em;
+    height: 1em;
+    opacity: 0.5;
+}
+.toggle-mode:hover {
+    opacity: 1;
+    scale: 1.1;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        font-size: 1em;
+        margin: 1em 0 3em;
+    }
+
+    .menu li {
+        margin-left: 1em;
+    }
+}
+
+/*LANDING SECTION*/
+p.text,
+p.caption {
+    font-size: 1.75em;
+}
+
+p.caption {
+    color: #FB7623;
+}
+
+p.text {
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 8em;
+    margin: 0 0 0.25em;
+    line-height: 98%;
+}
+
+.action-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8em;
+}
+
+p.action {
+    rotate: 90deg;
+    font-size: 1.25em;
+    transition: ease-in-out 100em;
+}
+
+p.action:hover {
+    scale: 1.15;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+
+    p.text,
+    p.caption {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2.75em;
+
+    }
+
+    p.action {
+        font-size: 0.75em;
+    }
+}
+
+
+/*WORK SECTION*/
+.line {
+    height: 0.5em;
+    width: 35vw;
+    background-color: #FB7623;
+}
+
+.line-left {
+    border-radius: 10px 0 0 10px;
+}
+
+.line-right {
+    border-radius: 0 10px 10px 0;
+}
+
+h2 {
+    font-size: 6em;
+    opacity: 0.8;
+}
+
+.title-container {
+    margin: 6em -20vw 6em -20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8em;
+    transition: ease-in-out 200ms;
+}
+
+.project-container:hover {
+    transform: skew(5deg, 2deg);
+}
+
+.project-image {
+    height: 15em;
+    width: 35em;
+    border-radius: 15px;
+    background-color: #d4d4d4;
+}
+
+.project-description {
+    margin-left: 2em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+p.project-caption {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+p.link {
+    margin-top: 2em;
+    font-size: 1.25em;
+    opacity: 0.8;
+    transition: ease-in-out 100ms;
+}
+
+p.link:hover {
+    color: #FB7623;
+    font-weight: 600;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+}
+#points {
+    transition: ease-in-out 200ms;
+}
+#points:hover {
+    scale: 1.2;
+}
+
+
+/*ABOUT SECTION*/
+#about {
+    display: flex;
+    margin-top: 16em;
+}
+
+.about-container {
+    margin-right: 2em;
+}
+
+.about-container h2 {
+    writing-mode: vertical-rl;
+    transform: scale(-1, -1);
+}
+
+.about-text {
+    margin-left: 6em;
+}
+
+.about-text h3 {
+    color: #FB7623;
+    opacity: 0.8;
+}
+
+.experiences {
+    margin-top: 2em;
+}
+
+
+/*CONTACT SECTION*/
+#contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+.contact-me {
+    color: inherit;
+    transition: ease-in-out 200ms;
+}
+.contact-me:hover {
+    transform: skew(3deg, 5deg);
+    color: #FB7623;
+    scale: 1.15;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: #FB7623;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: -20vw;
+    margin-right: -20vw;
+    padding: 2.5vw 20vw 2.5vw 20vw;
+}
+
+footer p.text {
+    opacity: 1;
+    font-size: 1.25em;
+}
+
+
+
+.dark-mode {
+    background-color: #121212;
+    color: #fafafa;
+}
+
+
+
+.border {
+    border: solid 2px red;
+}

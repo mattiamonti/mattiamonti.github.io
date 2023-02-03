@@ -88,7 +88,6 @@ div.name-container {
 }
 
 
-
 @media only screen and (max-width: 768px) {
     nav {
         font-size: 1em;
@@ -96,6 +95,7 @@ div.name-container {
     }
 
     .menu li {
+        display: none;
         margin-left: 1em;
     }
 }
@@ -235,6 +235,30 @@ p.link:hover {
 }
 #points:hover {
     scale: 1.2;
+}
+
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p.project-caption {
+        font-size: 0.75em;
+    }
+    
+    p.link {
+        font-size: 0.75em;
+    }
+    .project-container {
+        justify-content: center;
+    }
+    
+
 }
 
 

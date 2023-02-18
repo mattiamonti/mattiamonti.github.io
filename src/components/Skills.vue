@@ -6,7 +6,7 @@ export default {
     },
     data() {
         return {
-            path: 'src/assets/programming-logos/'
+            path: './src/assets/programming-logos/'
         }
     }
 }

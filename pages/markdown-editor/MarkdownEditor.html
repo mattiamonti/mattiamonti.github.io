@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.001 Markdown Editor</title>
+    <link rel="stylesheet" href="../baseStyle.css">
+    <link rel="stylesheet" href="../projectStyle.css">
+
+    <style scoped>
+        .text {
+            display: block;
+            margin-top: 2rem;
+            opacity: 0.8;
+        }
+
+        h3,
+        p {
+            display: inline;
+        }
+
+        .text-container {
+            min-height: 100vh;
+        }
+
+        #minimal-design,
+        #storage {
+            min-height: 10vh;
+        }
+
+        .title-icon {
+            scale: 1.5;
+            margin-right: 1rem;
+        }
+
+        #technology {
+            min-height: 60vh;
+        }
+
+        #links {
+            margin-top: 6rem;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Markdown Editor</h1>
+        <h4 id="subtitle">Minimalistic web app for taking markdown notes</h4>
+    </div>
+    <div class="cover-container">
+        <img src="./img/MarkdownEditor.png" alt="markdown editor" class="cover">
+    </div>
+    <div class="text-container">
+        <div id="minimal-design">
+            <h3>Minimal design </h3>
+            <p> online markdown editor</p>
+            <p class="text"><span class="bold">Without distraction</span> improve the focus avoiding a cluttered
+                interface. <br />
+                Supporting light and dark mode, <span class="bold">automatically</span></p>
+        </div>
+        <div class="spacer"></div>
+        <div id="storage">
+            <h3><img src="./img/privacy-icon.svg" alt="privacy-icon" class="title-icon">Always
+                remember </h3>
+            <p> what you type</p>
+            <p class="text">Your data <span class="bold">don't leave</span> your computer, <br />
+                in fact it persiste in the local storage of the browser.</p>
+
+        </div>
+        <div class="spacer"></div>
+        <div id="download">
+            <h3><img src="./img/privacy-icon.svg" alt="download-icon" class="title-icon"> Download
+            </h3>
+            <p> your file on your computer</p>
+            <p class="text">So you don't have to use exclusively this application to edit the markdown file that you own
+            </p>
+
+        </div>
+        <div class="spacer"></div>
+
+        <div id="technology">
+            <h3>Technology used</h3>
+            <hr>
+            <p class="text"><span class="bold">Vue JS</span></p>
+            <p class="text"><span class="bold">Figma</span> for design and prototyping</p>
+            <div id="links">
+                <a href="https://mattiamonti.github.io/markdown-editor/" target="_blank">
+                    <button>Check it out</button>
+                </a>
+                <a href="https://github.com/mattiamonti/markdown-editor" target="_blank">
+                    <button>Code</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--General Animations-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="../projectAnimation.js"></script>
+    <!--Animation-->
+    <script>
+        gsap.from('#minimal-design', {
+            opacity: 0.5, scale: 0.8, y: '-2rem',
+            scrollTrigger: {
+                trigger: '#minimal-design',
+                scrub: 1,
+                start: 'top 75%',
+                end: 'top 25%',
+
+            }
+        });
+
+        const start_animation_text = 'top 25%';
+        const end_animation_text = 'bottom top';
+        const animation_opacity = 0.5;
+        const animation_scale = 0.8;
+        const animation_y = '-2rem';
+
+        gsap.from('#storage', {
+            opacity: animation_opacity, scale: animation_scale, y: animation_y,
+            scrollTrigger: {
+                trigger: '#minimal-design',
+                scrub: 1,
+                start: start_animation_text,
+                end: end_animation_text,
+
+            }
+        });
+
+        gsap.from('#download', {
+            opacity: animation_opacity, scale: animation_scale, y: animation_y,
+            scrollTrigger: {
+                trigger: '#storage',
+                scrub: 1,
+                start: start_animation_text,
+                end: end_animation_text,
+            }
+        });
+
+        gsap.from('#technology', {
+            opacity: animation_opacity, scale: animation_scale, y: animation_y,
+            scrollTrigger: {
+                trigger: '#download',
+                scrub: 1,
+                start: start_animation_text,
+                end: end_animation_text,
+            }
+        });
+
+    </script>
+</body>
+
+</html>

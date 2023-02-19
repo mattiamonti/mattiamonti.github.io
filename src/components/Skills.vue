@@ -3,17 +3,12 @@ export default {
     props: {
         name: String,
         logo: String,
-    },
-    data() {
-        return {
-            path: 'src/assets/programming-logos/'
-        }
-    }
+    }, 
 }
 </script>
 
 <template>
-    <img :src="path + logo" :alt="name">
+    <img :src="logo" :alt="name">
 </template>
 
 <style scoped>

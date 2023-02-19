@@ -11,7 +11,7 @@ export default {
     methods: {
         changePage() {
             const link = document.getElementById('link')
-            link.href = '/src/pages/' + this.page_html
+            link.href = this.page_html
         }
     },
     components: {
@@ -24,7 +24,7 @@ export default {
     <a id="link" target="_blank">
         <div class="container" @click="changePage()">
             <div class="image-container">
-                <img alt="" :src="'/src/assets/project-images/' + img_name">
+                <img alt="" :src="img_name">
             </div>
 
             <ProjectText :title="this.title" :id="this.id" :description="this.description"></ProjectText>

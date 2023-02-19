@@ -1,10 +1,40 @@
 <script>
 import Skills from './Skills.vue';
-import skill_list from '../assets/skills.json'
+import iconGh from '/src/assets/programming-logos/git.svg'
+import iconPython from '/src/assets/programming-logos/python.svg'
+import iconJava from '/src/assets/programming-logos/java.svg'
+import iconCss from '/src/assets/programming-logos/css.svg'
+import iconJs from '/src/assets/programming-logos/js.svg'
+import iconHtml from '/src/assets/programming-logos/html.svg'
 export default {
     data() {
         return {
-            skills: skill_list,
+            skills: [
+                {
+                    "name": "python",
+                    "logo": iconPython
+                },
+                {
+                    "name": "java",
+                    "logo": iconJava
+                },
+                {
+                    "name": "html",
+                    "logo": iconHtml
+                },
+                {
+                    "name": "css",
+                    "logo": iconCss
+                },
+                {
+                    "name": "js",
+                    "logo": iconJs
+                },
+                {
+                    "name": "git",
+                    "logo": iconGh
+                }
+            ],
         }
     },
     components: {

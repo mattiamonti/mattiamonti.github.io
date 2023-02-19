@@ -14,7 +14,7 @@ export default {}
             <a href="#projects">
                 <p>Works</p>
             </a>
-            <a href="">
+            <a href="#about">
                 <p>About</p>
             </a>
         </div>

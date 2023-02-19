@@ -1,10 +1,19 @@
 <script>
 import Project from "./Project.vue"
-import projects_data from "../assets/projects.json"
+import imgMarkdownEditor from '/src/assets/project-images/MarkdownEditor.png'
+//import pageMarkdownEditor from '/src/pages/MarkdownEditor.html'
 export default {
   data() {
     return {
-      projects: projects_data,
+      projects: [
+        {
+          "id": 1,
+          "title": "Markdown editor",
+          "img_name": imgMarkdownEditor,
+          "page_html": "/pages/markdown-editor/MarkdownEditor.html",
+          "description": "Web app created with VueJS"
+        },
+      ],
     }
   },
   components: {
@@ -25,6 +34,7 @@ export default {
 section {
   min-height: 60vh;
   margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 h2 {

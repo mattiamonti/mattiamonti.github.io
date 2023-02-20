@@ -53,4 +53,16 @@ img {
     border-radius: 10px;
     z-index: 10;
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+}
 </style>

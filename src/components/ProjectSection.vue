@@ -40,4 +40,10 @@ section {
 h2 {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  section {
+    margin-bottom: 4rem;
+  }
+}
 </style>

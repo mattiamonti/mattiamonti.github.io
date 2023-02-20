@@ -51,6 +51,16 @@ img {
     transform: translate(2rem, 2rem);
 }
 
+@media only screen and (max-width: 600px) {
+    img {
+        scale: 0.45;
+    }
+
+    .image-container {
+        margin-top: 10rem;
+    }
+}
+
 @-webkit-keyframes rotating
 
 /* Safari and Chrome */

@@ -64,4 +64,11 @@ p {
         color: rgb(222, 128, 108);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .text-container {
+        transform: none;
+        padding: 0 0.5rem;
+    }
+}
 </style>

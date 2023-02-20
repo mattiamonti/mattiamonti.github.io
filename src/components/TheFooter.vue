@@ -30,4 +30,16 @@ p {
     opacity: 0.8;
     font-size: 1em;
 }
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin-top: 4rem;
+        padding: 1rem 1rem;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+}
 </style>

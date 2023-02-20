@@ -58,4 +58,22 @@ img:hover {
         filter: invert(0.2);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        margin-top: 6rem;
+    }
+
+    .links {
+        gap: 1rem;
+    }
+
+    img {
+        scale: 0.75;
+    }
+
+    img:hover {
+        scale: 0.9;
+    }
+}
 </style>

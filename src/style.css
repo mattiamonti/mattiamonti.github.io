@@ -57,6 +57,28 @@ p {
   margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -91,6 +113,13 @@ button:focus-visible {
   /*max-width: 1280px;*/
   margin-left: 4rem;
   margin-right: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 @media (prefers-color-scheme: light) {

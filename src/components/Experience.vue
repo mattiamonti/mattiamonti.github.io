@@ -32,4 +32,14 @@ h4 {
         color: rgb(222, 128, 108);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .exp-container {
+        gap: 0rem;
+    }
+
+    h4 {
+        min-width: 3.5rem;
+    }
+}
 </style>

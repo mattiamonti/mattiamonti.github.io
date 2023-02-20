@@ -66,4 +66,11 @@ export default {
         background-color: #efefef;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .icons-container {
+        gap: 0rem;
+        padding: 0;
+    }
+}
 </style>

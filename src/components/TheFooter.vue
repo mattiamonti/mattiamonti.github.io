@@ -4,7 +4,7 @@ export default {}
 
 <template>
     <footer>
-        <p>@2023</p>
+        <p>©2023</p>
         <p>Designed and developed by Mattia Monti</p>
     </footer>
 </template>

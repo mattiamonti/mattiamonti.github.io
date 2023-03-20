@@ -26,7 +26,7 @@ h2 {
 }
 
 h2:hover {
-    color: rgb(175, 81, 61);
+    color: var(--accent-color);
     scale: 1.1;
 }
 
@@ -47,7 +47,7 @@ img:hover {
 
 @media (prefers-color-scheme: light) {
     h2:hover {
-        color: rgb(222, 128, 108);
+        color: var(--accent-color);
     }
 
     img {

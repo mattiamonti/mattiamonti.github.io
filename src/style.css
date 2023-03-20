@@ -5,7 +5,9 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #121212;
-  --text-color: rgba(255, 255, 255, 0.87) --background-color: #121212;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #121212;
+  --accent-color: #D26832;
   scroll-behavior: smooth;
 
   font-synthesis: none;
@@ -128,6 +130,7 @@ button:focus-visible {
     background-color: #fafafa;
     --text-color: #121212;
     --background-color: #fafafa;
+    --accent-color: #D26832;
   }
 
   button {

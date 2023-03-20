@@ -36,7 +36,7 @@ export default {
 .click-cue {
     font-size: 1.15em;
     font-weight: bold;
-    color: rgb(175, 81, 61);
+    color: var(--accent-color);
     opacity: 0;
     transition: ease-in 300ms;
 }
@@ -61,7 +61,7 @@ p {
     }
 
     .click-cue {
-        color: rgb(222, 128, 108);
+        color: var(--accent-color);
     }
 }
 

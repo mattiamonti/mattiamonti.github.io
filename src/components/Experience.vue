@@ -24,12 +24,12 @@ export default {
 
 h4 {
     min-width: 6rem;
-    color: rgb(175, 81, 61);
+    color: var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
     h4 {
-        color: rgb(222, 128, 108);
+        color: var(--accent-color);
     }
 }
 

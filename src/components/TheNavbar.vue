@@ -12,7 +12,7 @@ export default {}
         </div>
         <div class="menu">
             <a href="#projects">
-                <p>Works</p>
+                <p>Projects</p>
             </a>
             <a href="#about">
                 <p>About</p>

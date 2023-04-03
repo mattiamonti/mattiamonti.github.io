@@ -5,7 +5,9 @@ import AppButton from './AppButton.vue';
     <section>
         <div>
             <h1>Creative Develø_<br>_per</h1>
-            <AppButton name="See my works" img="/src/assets/microscope.svg"></AppButton>
+            <a href="#projects">
+                <AppButton name="See my works" img="/src/assets/microscope.svg"></AppButton>
+            </a>
         </div>
         <div class="post-container">
             <div class="post">

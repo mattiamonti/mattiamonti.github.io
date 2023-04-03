@@ -1,27 +1,11 @@
 <script setup>
-import TheNavbar from "./components/TheNavbar.vue"
-import Landing from "./components/Landing.vue"
-import ProjectSection from "./components/ProjectSection.vue";
-import SkillSection from "./components/SkillSection.vue";
-import About from "./components/About.vue";
-import Contact from "./components/Contact.vue";
-import TheFooter from "./components/TheFooter.vue";
+import TheNavbar from './components/TheNavbar.vue'
+import TheLanding from './components/TheLanding.vue'
 </script>
 
 <template>
-  <div id="content">
-    <TheNavbar></TheNavbar>
-    <Landing></Landing>
-    <ProjectSection></ProjectSection>
-  </div>
-  <SkillSection></SkillSection>
-  <div id="content">
-    <About></About>
-    <Contact></Contact>
-  </div>
-  <TheFooter></TheFooter>
+  <TheNavbar></TheNavbar>
+  <TheLanding></TheLanding>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

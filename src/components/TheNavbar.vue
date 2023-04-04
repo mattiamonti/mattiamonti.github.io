@@ -3,7 +3,7 @@ import AppMenuButton from './AppMenuButton.vue';
 import AppMenuButtonFilled from './AppMenuButtonFilled.vue';
 </script>
 <template>
-    <div id="nav-container">
+    <div id="nav-container" v-motion-slide-top>
         <nav>
             <div id="first-cluster">
                 <AppMenuButton name="Home"></AppMenuButton>

@@ -11,8 +11,8 @@ defineProps({
 <template>
     <div class="project-container">
         <div class="line"> </div>
-        <div class="project" @mouseenter="show = true" @mouseleave="show = false">
-            <div>
+        <div class="project">
+            <div @mouseenter="show = true" @mouseleave="show = false">
                 <h2>Project 1</h2>
                 <div class="spacer"> </div>
                 <p>Lorem ipsum dolor sit amen ipsum dolor sit amen ipsum dolor sit amen</p>

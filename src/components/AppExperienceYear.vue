@@ -4,14 +4,11 @@ defineProps({
     year: String,
     experiences: [],
 })
-
-
-
 </script>
 <template>
     <div>
         <div class="line"></div>
-        <div class="content">
+        <div class="content" v-motion-slide-visible-left>
             <div class="date">
                 <h3>{{ year }}</h3>
             </div>

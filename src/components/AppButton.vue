@@ -5,7 +5,7 @@ defineProps({
 })
 </script>
 <template>
-    <div class="button-container">
+    <div class="button-container" v-motion-pop-visible>
         <div class="button">
             <img :src="img" alt="">
             <p class="text">{{ name }}</p>

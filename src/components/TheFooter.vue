@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
     <section>
-        <div id="footer">
+        <div id="footer" v-motion-fade-visible>
             <p>©2023</p>
             <p>Designed & developed by Mattia Monti</p>
         </div>

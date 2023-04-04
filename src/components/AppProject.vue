@@ -11,7 +11,7 @@ defineProps({
 <template>
     <div class="project-container">
         <div class="line"> </div>
-        <div class="project">
+        <div class="project" v-motion-slide-visible-left>
             <div @mouseenter="show = true" @mouseleave="show = false">
                 <h2>Project 1</h2>
                 <div class="spacer"> </div>
@@ -20,7 +20,7 @@ defineProps({
             <p class="link">View more</p>
         </div>
     </div>
-    <div v-if="show" class="prova-img"></div>
+    <div v-if="show" class="prova-img" v-motion-fade></div>
 </template>
 <style scoped>
 .prova-img {
@@ -30,6 +30,7 @@ defineProps({
     border-radius: 10px;
     right: 4%;
     background-color: red;
+    z-index: 10;
 }
 
 .project-container {

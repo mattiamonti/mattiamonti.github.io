@@ -3,10 +3,9 @@ import AppProject from './AppProject.vue';
 </script>
 <template>
     <section id="projects">
-        <AppProject></AppProject>
-        <AppProject></AppProject>
-        <AppProject></AppProject>
-
+        <AppProject title="MarkdownEditor" imgsrc="/src/assets/project-images/MarkdownEditor.png"></AppProject>
+        <AppProject title="Car dealer" imgsrc="/src/assets/project-images/MarkdownEditor.png"></AppProject>
+        <AppProject title="nuovo?" imgsrc="/src/assets/project-images/MarkdownEditor.png"></AppProject>
     </section>
 </template>
 <style scoped>

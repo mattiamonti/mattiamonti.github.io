@@ -5,7 +5,7 @@ const show = ref(false)
 defineProps({
     title: String,
     description: String,
-    img: String,
+    imgsrc: String,
 })
 </script>
 <template>
@@ -13,24 +13,30 @@ defineProps({
         <div class="line"> </div>
         <div class="project" v-motion-slide-visible-left>
             <div @mouseenter="show = true" @mouseleave="show = false">
-                <h2>Project 1</h2>
+                <h3>{{ title }}</h3>
                 <div class="spacer"> </div>
                 <p>Lorem ipsum dolor sit amen ipsum dolor sit amen ipsum dolor sit amen</p>
             </div>
             <p class="link">View more</p>
         </div>
     </div>
-    <div v-if="show" class="prova-img" v-motion-fade></div>
+    <div v-if="show" class="prova-img" v-motion-fade>
+        <img :src="imgsrc" alt="">
+    </div>
 </template>
 <style scoped>
 .prova-img {
     width: 30vw;
-    height: 30vw;
+    height: fit-content;
     position: absolute;
     border-radius: 10px;
     right: 4%;
-    background-color: red;
     z-index: 10;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .project-container {

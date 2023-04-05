@@ -11,7 +11,8 @@ import AppButton from './AppButton.vue';
         </div>
         <div class="post-container">
             <div class="post">
-                <h4>I'm currently studying Internet of Things, Big Data, Machine learning at the University of Udine, in
+                <h4>Hi! I'm Mattia Monti, currently a student of Internet of Things, Big Data, Machine learning at the
+                    University of Udine in
                     Italy.</h4>
             </div>
             <div class="post">

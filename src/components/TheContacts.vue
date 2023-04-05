@@ -7,7 +7,7 @@ import AppButton from './AppButton.vue';
             <a href="https://www.linkedin.com/in/montimattia/" target="_blank">
                 <AppButton name="@ LinkedIn"></AppButton>
             </a>
-            <a href="https://www.linkedin.com/in/montimattia/" target="_blank">
+            <a href="https://github.com/mattiamonti" target="_blank">
                 <AppButton name="@ Github"></AppButton>
             </a>
             <a href="mailto:mattiamonti2001@gmail.com" target="_blank">

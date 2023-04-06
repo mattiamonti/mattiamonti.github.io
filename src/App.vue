@@ -34,4 +34,11 @@ import TheContacts from './components/TheContacts.vue'
 .spacer-sm {
   height: 6rem;
 }
+
+@media only screen and (max-width: 600px) {
+  #exp {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>

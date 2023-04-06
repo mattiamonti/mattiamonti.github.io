@@ -50,4 +50,21 @@ h1 {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    .post {
+        width: 100%;
+    }
+}
 </style>

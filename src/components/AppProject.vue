@@ -93,4 +93,29 @@ p.link:hover {
     text-decoration: underline;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .project {
+        width: fit-content;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .project div {
+        flex-direction: column;
+    }
+
+    .spacer {
+        width: 100%;
+        height: 0.25rem;
+    }
+
+    p.link {
+        font-size: 1rem;
+    }
+
+    .project-container {
+        justify-content: center;
+    }
+}
 </style>

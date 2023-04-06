@@ -37,4 +37,10 @@ nav {
     flex-direction: row;
     gap: 0.4rem;
 }
+
+@media only screen and (max-width: 600px) {
+    #nav-container {
+        scale: 0.5;
+    }
+}
 </style>

@@ -24,4 +24,14 @@ section {
     width: fit-content;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 1rem;
+    }
+
+    #footer {
+        scale: 0.7;
+    }
+}
 </style>

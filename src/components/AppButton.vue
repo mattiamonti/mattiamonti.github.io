@@ -53,4 +53,18 @@ img {
     display: inline;
     filter: invert();
 }
+
+@media only screen and (max-width: 600px) {
+    p.text {
+        font-size: 1rem;
+    }
+
+    .button {
+        gap: 0.2rem;
+    }
+
+    img {
+        scale: 0.9;
+    }
+}
 </style>

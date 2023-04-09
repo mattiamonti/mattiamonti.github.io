@@ -39,6 +39,8 @@ import TheContacts from './components/TheContacts.vue'
   #exp {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 4rem;
   }
 }
 </style>

@@ -55,12 +55,13 @@ h1 {
     section {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 1rem;
     }
 
-    h1 {
-        width: 100%;
+    section div {
+        width: fit-content;
     }
 
     .post {

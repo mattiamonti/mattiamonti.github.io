@@ -96,8 +96,9 @@ p.link:hover {
 
 @media only screen and (max-width: 600px) {
     .project {
-        width: fit-content;
+        width: 100%;
         flex-direction: column;
+        gap: 1rem;
         padding: 1rem 2rem;
     }
 
@@ -116,6 +117,7 @@ p.link:hover {
 
     .project-container {
         justify-content: center;
+        align-items: center;
     }
 }
 </style>
